@@ -1,0 +1,22 @@
+{
+  "name": "newhouse-k8s-deployment",
+  "version": "0.0.1",
+  "description": "Microservices deployment on Kubernetes",
+  "license": "UNLICENSED",
+  "private": true,
+  "engines": {
+    "node": ">=8",
+    "npm": ">=3.10"
+  },
+  "scripts": {
+    "start": "babel-node index.js --presets es2015,stage-2"
+  },
+  "dependencies": {
+    "js-yaml": "^3.9.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1"
+  }
+}

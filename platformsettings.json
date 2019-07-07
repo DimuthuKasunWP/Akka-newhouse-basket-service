@@ -1,0 +1,32 @@
+{
+    "Platform": {
+        "Namespace": "default",
+        "FunctionalDomain": "shopping",
+        "LoadbalancerHostName": "public-api.westeurope.cloudapp.azure.com",
+        "LoadbalancerPrefixPath": "/service/basket",
+        "HealthCheckPath": "/api/ping",
+        "Ports": {
+            "Http": 5000
+        }
+    },
+    "Environments": {
+        "Staging": {
+            "NoInstances": 1,
+            "Memory": "48Mi",
+            "Cpu": "100m",
+            "Vars": {
+                "SampleVar1": "value1",
+                "SampleVar2": "value2"
+            }
+        },
+        "Production": {
+            "NoInstances": 1,
+            "Memory": "48Mi",
+            "Cpu": "100m",
+            "Vars": {
+                "SampleVar1": "value1_prod",
+                "SampleVar2": "value2_prod"
+            }
+        }
+    }
+}
